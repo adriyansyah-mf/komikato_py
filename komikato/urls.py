@@ -29,6 +29,7 @@ urlpatterns = [
     path('otakudesu/', include('routers.web.otakudesu')),
     path('mangabat/', include('routers.web.mangabat')),
     path('komiku/', include('routers.web.komiku')),
+    path('mangasusu/', include('routers.web.mangasusu')),
     #path('bacakomik/', include('routers.web.bacakomik.urls')),
     path('api/komikindo/', include('routers.api.komikindo')),
     path('api/otakudesu/', include('routers.api.otakudesu')),

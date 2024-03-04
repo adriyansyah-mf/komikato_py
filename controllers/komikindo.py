@@ -49,6 +49,7 @@ def home(request):
             obj["body"]["popular"] = []
             mangas = manga.find("div", {"class": "mangapopuler"}).find_all("div", {"class": "animepost"})
             for m in mangas:
+                
                 name = m.find("a", itemprop="url").get("title")
                 thumb = m.find("img").get("src").split("?")[0]
                 link = {
