@@ -82,7 +82,7 @@ def detail(request, endpoint):
     response = tools.get(baseURL + "anime/" + endpoint)
     data = response.text.replace(prox, baseURL).replace(proxq, "")
     soup = BeautifulSoup(data, "html.parser")
-    
+    print(soup)
     obj = {}
     obj["id"] = soup.find(rel="shortlink").get("href").split("?p=")[1]
     obj["main_title"] = soup.find(class_="jdlrx").find("h1").text.strip()
