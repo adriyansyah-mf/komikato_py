@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import config as url
 
 baseURL = url.OTAKUDESU_BASEURL
-prox = "https://otakudesu-site.translate.goog/"
+prox = "https://otakudesu-cloud.translate.goog/"
 proxq = "?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=id"
 
 def index(request):
